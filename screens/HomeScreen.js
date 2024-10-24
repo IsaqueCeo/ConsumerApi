@@ -17,15 +17,7 @@ export default function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Comments')}>
           <Text style={styles.buttonText}>Comments</Text>
         </TouchableOpacity>
-        
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Albums')}>
-          <Text style={styles.buttonText}>Albums</Text>
-        </TouchableOpacity>
-        
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Photos')}>
-          <Text style={styles.buttonText}>Photos</Text>
-        </TouchableOpacity>
-        
+
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Users')}>
           <Text style={styles.buttonText}>Users</Text>
         </TouchableOpacity>
