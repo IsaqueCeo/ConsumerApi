@@ -4,6 +4,8 @@ import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 import Feather from '@expo/vector-icons/Feather';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import AntDesign from '@expo/vector-icons/AntDesign';
+
 
 const backgroundImage = { uri: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0' };
 
@@ -85,7 +87,7 @@ const EnhancedPostsScreen = () => {
               </TouchableOpacity>
 
               <TouchableOpacity
-                style={styles.updateButton}
+                style={styles.updateButton}refres
                 onPress={() => updatePartialPost(item.id)}
               >
                 <Text style={styles.buttonText}><FontAwesome name="refresh" size={24} color="black" /></Text>
@@ -95,7 +97,7 @@ const EnhancedPostsScreen = () => {
                 style={styles.deleteButton}
                 onPress={() => removePost(item.id)}
               >
-                <Text style={styles.buttonText}>Excluir</Text>
+                <Text style={styles.buttonText}><AntDesign name="delete" size={24} color="black" /></Text>
               </TouchableOpacity>
             </View>
           )}
@@ -157,7 +159,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   deleteButton: {
-    backgroundColor: '#e74c3c',
+    // backgroundColor: '#e74c3c',
     padding: 10,
     borderRadius: 5,
     marginTop: 10,
